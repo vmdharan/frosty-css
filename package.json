@@ -3,20 +3,38 @@
   "version": "1.0.0",
   "description": "UI library",
   "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
-    "clean": "rimraf dist",
-    "start": "parcel serve -p 4000",
-    "watch": "parcel watch",
-    "buildmap": "parcel build",
+    "analyse": "parcel build src/index.html --reporter @parcel/reporter-bundle-analyzer",
     "build": "parcel build --no-source-maps",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "buildmaps": "parcel build",
+    "clean": "rimraf ./dist",
+    "format": "prettier --write \"**/*.{ts,tsx,css,scss}\"",
+    "start": "parcel serve -p 4000",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "parcel watch"
   },
   "keywords": [],
   "author": "vmdharan",
   "license": "MIT",
+  "@parcel/transformer-sass": {
+    "cssModules": true
+  },
   "devDependencies": {
+    "@parcel/compressor-brotli": "^2.13.3",
+    "@parcel/compressor-gzip": "^2.13.3",
+    "@parcel/reporter-bundle-analyzer": "^2.13.3",
     "@parcel/transformer-sass": "^2.13.3",
+    "@types/react": "^19.0.2",
+    "@types/react-dom": "^19.0.2",
     "parcel": "^2.13.3",
-    "rimraf": "^6.0.1"
+    "prettier": "^3.4.2",
+    "process": "^0.11.10",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
