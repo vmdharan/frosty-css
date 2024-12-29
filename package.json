@@ -1,0 +1,22 @@
+{
+  "name": "frosty-css",
+  "version": "1.0.0",
+  "description": "UI library",
+  "source": "src/index.html",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "parcel serve -p 4000",
+    "watch": "parcel watch",
+    "buildmap": "parcel build",
+    "build": "parcel build --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "vmdharan",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "rimraf": "^6.0.1"
+  }
+}
