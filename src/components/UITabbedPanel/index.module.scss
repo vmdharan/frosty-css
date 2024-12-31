@@ -1,0 +1,42 @@
+.ui-tabbed-panel {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+.ui-tabbed-panel-header {
+    margin-bottom: 8px;
+}
+
+.ui-tabbed-panel-header-button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+.ui-tabbed-panel-header-button-active {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+}
+
+.ui-tabbed-panel-base {
+    border: none;
+}
+
+.ui-tabbed-panel-content {
+    display: none;
+}
+
+.ui-tabbed-panel-content-active {
+    background-color: white;
+}
+
+.ui-tabbed-panel-actions {
+    display: flex;
+    margin-top: 16px;
+}
+
+.ui-tabbed-panel-actions-button {
+    flex: auto;
+}

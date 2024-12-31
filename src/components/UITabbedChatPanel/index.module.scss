@@ -1,0 +1,46 @@
+.ui-tabbed-chat-panel {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    resize: both;
+    overflow: auto;
+}
+
+.ui-tabbed-chat-panel-header {
+    margin-bottom: 8px;
+}
+
+.ui-tabbed-chat-panel-header-button {
+    background-color: black;
+    color: white;
+    padding: 8px;
+}
+
+.ui-tabbed-chat-panel-header-button-active {
+    background-color: blue;
+    color: white;
+    padding: 8px;
+}
+
+.ui-tabbed-chat-panel-base {
+    border: none;
+}
+
+.ui-tabbed-chat-panel-content {
+    display: none;
+    box-sizing: border-box;
+}
+
+.ui-tabbed-chat-panel-content-active {
+    background-color: white;
+    width: 100%;
+}
+
+.ui-tabbed-chat-panel-actions {
+    display: flex;
+    margin-top: 16px;
+}
+
+.ui-tabbed-chat-panel-actions-input {
+    flex: auto;
+}

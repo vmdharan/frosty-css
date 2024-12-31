@@ -1,0 +1,29 @@
+.ui-button {
+    padding: 8px;
+    margin: 4px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.ui-button:hover {
+    cursor: pointer;
+    background-color: deepskyblue;
+}
+
+.ui-button-primary {
+    border: 2px solid darkblue;
+    background-color: darkblue;
+    color: white;
+}
+
+.ui-button-secondary {
+    border: 2px solid darkblue;
+    background-color: white;
+    color: darkblue;
+}
+
+.ui-button-text {
+    border: none;
+    background-color: white;
+    color: darkblue;
+}

@@ -129,5 +129,9 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+# miscellaneous
+.DS_Store
+
 # parcel
 parcel-bundle-reports
+

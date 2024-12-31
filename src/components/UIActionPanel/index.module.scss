@@ -1,0 +1,15 @@
+.ui-action-panel {
+    border: 2px solid blue;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+}
+
+.ui-action-panel-base {
+    border: none;
+}
+
+.ui-action-panel-buttons {
+    width: 48px;
+    height: 48px;
+}
