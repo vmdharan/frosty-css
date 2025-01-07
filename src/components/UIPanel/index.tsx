@@ -50,14 +50,16 @@ const UIPanel = (props: UIPanelPropsType) => {
             onStop={(e: DraggableEvent, data: DraggableData) =>
                 props.update(data.x, data.y, props.position)
             }
-            defaultPosition={{ x: props.position.x, y: props.position.y }}
+            defaultPosition={{
+                x: props.position.x > 0 ? props.position.x : 0,
+                y: props.position.y > 0 ? props.position.y : 0,
+            }}
         >
-            <div ref={ref as RefObject<HTMLDivElement>} className={[props?.classNames, styles['ui-panel']].join(' ')}>
-                <div
-                    className={['handle', styles['ui-panel-title-bar']].join(
-                        ' ',
-                    )}
-                >
+            <div
+                ref={ref as RefObject<HTMLDivElement>}
+                className={[props?.classNames, styles['ui-panel']].join(' ')}
+            >
+                <div className={['handle', styles['ui-panel-title-bar']].join(' ')}>
                     <div className={styles['ui-panel-title']}>{props.title}</div>
                     <div className={styles['ui-panel-title-btn-close']}>X</div>
                 </div>
