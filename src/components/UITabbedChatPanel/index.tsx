@@ -67,7 +67,7 @@ const UITabbedChatPanel = (props: UITabbedChatPanelPropsType) => {
                                 rows={8}
                                 cols={50}
                                 readOnly
-                                style={{ border: 'none' }}
+                                className={styles['ui-tabbed-chat-panel-content-text']}
                                 value={tab?.toString()}
                             ></textarea>
                         </div>

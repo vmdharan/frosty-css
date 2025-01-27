@@ -4,6 +4,10 @@
     border: 2px solid black;
     resize: both;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    min-height: 180px;
 }
 
 .ui-tabbed-chat-panel-header {
@@ -34,13 +38,25 @@
 .ui-tabbed-chat-panel-content-active {
     background-color: white;
     width: 100%;
+    flex: 1;
+}
+
+.ui-tabbed-chat-panel .ui-tabbed-chat-panel-content-active .ui-tabbed-chat-panel-content-text {
+    border: none;
+    background-color: paleturquoise;
+    color: blue;
+    min-width: fit-content;
+    height: 100%;
+    width: 100%;
+    resize: none;
 }
 
 .ui-tabbed-chat-panel-actions {
+    flex: 0;
     display: flex;
     margin-top: 16px;
 }
 
 .ui-tabbed-chat-panel-actions-input {
-    flex: auto;
+    flex: 1;
 }
