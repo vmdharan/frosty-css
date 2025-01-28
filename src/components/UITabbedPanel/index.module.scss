@@ -2,19 +2,25 @@
     background-color: white;
     color: black;
     border: 2px solid black;
+    resize: both;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+    min-height: 180px;
 }
 
-.ui-tabbed-panel-header {
+.ui-tabbed-panel .ui-tabbed-panel-header {
     margin-bottom: 8px;
 }
 
-.ui-tabbed-panel-header-button {
+.ui-tabbed-panel .ui-tabbed-panel-header .ui-tabbed-panel-header-button {
     background-color: black;
     color: white;
     padding: 8px;
 }
 
-.ui-tabbed-panel-header-button-active {
+.ui-tabbed-panel .ui-tabbed-panel-header .ui-tabbed-panel-header-button-active {
     background-color: blue;
     color: white;
     padding: 8px;
@@ -24,19 +30,21 @@
     border: none;
 }
 
-.ui-tabbed-panel-content {
+.ui-tabbed-panel .ui-tabbed-panel-content {
     display: none;
 }
 
-.ui-tabbed-panel-content-active {
+.ui-tabbed-panel .ui-tabbed-panel-content-active {
     background-color: white;
+    flex: 1;
 }
 
-.ui-tabbed-panel-actions {
+.ui-tabbed-panel .ui-tabbed-panel-actions {
+    flex: 0;
     display: flex;
-    margin-top: 16px;
+    margin: 4px;
 }
 
-.ui-tabbed-panel-actions-button {
-    flex: auto;
+.ui-tabbed-panel .ui-tabbed-panel-actions .ui-tabbed-panel-actions-button {
+    flex: 1;
 }
